@@ -1,5 +1,5 @@
-import Image from "next/image";
-import { PropsWithChildren } from "react";
+import Image from 'next/image';
+import { PropsWithChildren } from 'react';
 
 interface LogoProps extends PropsWithChildren<any> {
     width?: number,
@@ -11,12 +11,12 @@ export default function Logo({
     height: h = 64
 }: LogoProps) {
     return (
-        <div className="">
+        <div className=''>
             <Image
-                className="rounded-3xl"
+                className='rounded-3xl'
                 // png image from pngtree.com: https://pngtree.com/freepng/plate-with-fork-and-knife-icon-flat-style_5105121.html
-                src={"/logo.png"}
-                alt={""}
+                src={'/logo.png'}
+                alt={''}
                 width={w}
                 height={h}
             />
